@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Mobile barber in Malta offering skin fades, classic haircuts, beard trims and home barber services across Malta.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile Barber Malta | Old School Cuts | Home Haircuts & Skin Fades</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:#f5f5f5;
+      line-height:1.6;
+    }
+
+    header{
+      background:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      position:relative;
+    }
+
+    header::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.7);
+    }
+
+    .hero{
+      position:relative;
+      z-index:2;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      letter-spacing:4px;
+      color:#d4af37;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      margin-top:15px;
+      font-size:1.2rem;
+      color:#ddd;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 30px;
+      background:#d4af37;
+      color:#111;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:5px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#fff;
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:#000;
+      padding:15px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+      border-bottom:2px solid #d4af37;
+    }
+
+    nav h2{
+      color:#d4af37;
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:20px;
+    }
+
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#d4af37;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:2.5rem;
+      color:#d4af37;
+      text-transform:uppercase;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1c1c1c;
+      padding:30px;
+      border:1px solid #333;
+      border-radius:10px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:#d4af37;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#d4af37;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      position: inherit;
+      border-radius:10px;
+      border:3px solid #d4af37;
+    }
+  
+    .barberlogo img{
+      width: 100%;
+      position:inherit;
+      border-radius: 10px;
+      border: 3px solid #d4af37;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:10px 0;
+      font-size:1.1rem;
+    }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:20px;
+      border-top:2px solid #d4af37;
+      color:#aaa;
+    }
+
+    .Prices{
+
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+      }
+
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:10px;
+        padding:15px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+      
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Old School Cuts</h2>
+
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Book</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <h1>Mobile Barber</h1>
+
+      <p>
+        I provide mobile hair services, bringing professional hair care directly to your home.
+                Clean faded hair styles.Trimming hair etc... 
+      </p>
+
+      <a href="#contact" class="btn">Book Now</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>Classic Haircut</h3>
+        <p>
+          Traditional scissor and clipper cuts with old-school precision.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Skin Fade</h3>
+        <p>
+          Sharp modern fades blended to perfection at your location.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Beard Trim</h3>
+        <p>
+          Hot towel beard shaping and detailed grooming services.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>House Calls</h3>
+        <p>
+          Professional barber service delivered directly to your home.
+        </p>
+      </div>  
+    </div>
+        <br>
+          <div class="Prices">
+    <p> 
+        Haircut + SkinFade   &euro;15
+      </p>
+          <br>
+      <p>
+        Haircut + Beard &euro;20
+      </p>
+          <br>
+      <p>
+        Haircut + Beard + Hot Towel &euro;25
+      </p>
+          <br>
+      <p>
+        Full Package including Hot Towel , Beard , Haircut + Face Massage &euro;30
+      </p>
+          </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+      <img src="images/Barber logo.jpg">
+      
+
+      <div>
+
+      <div class="barberlogo">
+
+        <img src="images/barber sign.jpg">
+
+      </div>
+      
+        <p>
+          I bring the authentic barbershop experience directly to your door.
+          Inspired by vintage barbershops from the golden era, our mobile
+          barbering service combines classic style with modern convenience.
+        </p>
+
+        <br>
+        
+        <p>
+          Haircuts and beard trims tailored to your preferred style. Beard including Hot Towels method and creams, Includes a relaxing face massage to leave your skin feeling refreshed.
+        </p>
+            <br>
+
+        <p>
+          Whether you're at home, work, or preparing for an event,
+          I deliver sharp cuts and clean grooming with professional service.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Book Appointment</h2>
+
+    <div class="contact">
+
+      <p>📍 Mobile Barber Service Available Throughout Malta</p>
+      <p><a href="https://wa.me/35679375828" target="_blank">
+    WhatsApp: +356 79375828
+</a>📞</p>
+      <p>✉️ Bookings at montebellojeffrey@yahoo.com</p>
+
+      <a href="tel:+35699999999" class="btn">
+        Call Now
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 Old School Cuts Mobile Barber — Old School Style.
+    </p>
+  </footer>
+
+</body>
+</html>
